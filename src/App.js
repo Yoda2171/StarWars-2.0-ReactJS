@@ -20,6 +20,7 @@ const App = props => {
         <Route path="/personajes/:id" component={infoPersonajes}></Route>
         <Route path="/species/:id" component={MoreSpecies}></Route>
         <Route path="/home" component={Home} />
+        <Route path="/" component={Home} />
         <div className="container">
           <Route path="/species" component={Species} />
           <Route path="/planetas" component={Planetas} />
