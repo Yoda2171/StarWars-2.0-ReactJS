@@ -19,15 +19,12 @@ const App = props => {
         <Route path="/planetas/:id" component={infoPlanetas}></Route>
         <Route path="/personajes/:id" component={infoPersonajes}></Route>
         <Route path="/species/:id" component={MoreSpecies}></Route>
+        <Route path="/species" component={Species} />
+        <Route path="/planetas" component={Planetas} />
+        <Route path="/personajes" component={Personajes} />
         <Route path="/home" component={Home} />
-        <Route path="/" component={Home} />
-        <div className="container">
-          <Route path="/species" component={Species} />
-          <Route path="/planetas" component={Planetas} />
-          <Route path="/personajes" component={Personajes} />
-        </div>
-          
-          <Route render={() => { return <h1>Page Not Found</h1> }} />
+        <Route path="" component={Home} />
+        <Route render={() => { return <h1>Page Not Found</h1> }} />
       </Switch>
     </BrowserRouter>
   )
